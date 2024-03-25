@@ -1,0 +1,1 @@
+Intrebare{id='2', text='Ce sunt eu?', raspunsA='om', raspunsB='caine', raspunsC='insecta', corect='om', punctaj=5}

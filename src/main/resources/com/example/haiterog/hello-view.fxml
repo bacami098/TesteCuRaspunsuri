@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.haiterog.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <ListView fx:id="lstMessage" prefHeight="200.0" prefWidth="200.0" />
+    <HBox prefHeight="100.0" prefWidth="200.0" >
+        <Button fx:id="afiseazaIntrebari" text="afiseaza intrebari" onAction="#getAllIntrebari"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <Label text="id intrebare"/>
+        <TextField fx:id="id_intrebare" prefWidth="100"/>
+        <Label text="text"/>
+        <TextField fx:id="text" prefWidth="100"/>
+        <Label text="raspunsA"/>
+        <TextField fx:id="raspunsA" prefWidth="100"/>
+        <Label text="raspunsB"/>
+        <TextField fx:id="raspunsB" prefWidth="100"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <Label text="raspunsC"/>
+        <TextField fx:id="raspunsC" prefWidth="100"/>
+        <Label text="corect"/>
+        <TextField fx:id="corect" prefWidth="100"/>
+        <Label text="punctaj"/>
+        <TextField fx:id="punctaj" prefWidth="100"/>
+        <Label text="id intrebare de modificat"/>
+        <TextField fx:id="id_intrebare_mod" prefWidth="100"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <Label text="punctajminim"/>
+        <TextField fx:id="punctajminim" prefWidth="100"/>
+        <Label text="punctajmaxim"/>
+        <TextField fx:id="punctajmaxim" prefWidth="100"/>
+        <Label text="nrintrebari"/>
+        <TextField fx:id="nrintrebari" prefWidth="100"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <Button fx:id="addIntrebare" text="adauga intrebare" onAction="#addIntrebare"/>
+        <Button fx:id="removeIntrebare" text="sterge intrebare" onAction="#removeIntrebare"/>
+        <Button fx:id="updateIntrebare" text="modifica intrebare" onAction="#updateIntrebare"/>
+        <Button fx:id="generareTest" text="genereaza un test" onAction="#generareTest"/>
+    </HBox>
+</VBox>
